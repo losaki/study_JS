@@ -42,15 +42,34 @@
 // val5.push("monkey");
 // console.log(val5)
 
-//テンプレート文字列
+// //テンプレート文字列
 
-const name = "testname";
-const age = "25";
+// const name = "testname";
+// const age = "25";
+
+// //従来
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
+
+// //テンプレートを用いる
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
 
 //従来
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+//  function func1(str) {
+//    return str;
+//  }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("FUNK1"));
 
-//テンプレートを用いる
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+const funk2 = (str) => str;
+console.log(funk2("funk2です"));
+
+const funk3 = (num1, num2) => num1 + num2;
+console.log(funk3(10, 20));
