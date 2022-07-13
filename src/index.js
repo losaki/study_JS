@@ -63,13 +63,37 @@
 //  function func1(str) {
 //    return str;
 //  }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("FUNK1"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("FUNK1"));
 
-const funk2 = (str) => str;
-console.log(funk2("funk2です"));
+// const funk2 = (str) => str;
+// console.log(funk2("funk2です"));
 
-const funk3 = (num1, num2) => num1 + num2;
-console.log(funk3(10, 20));
+// const funk3 = (num1, num2) => num1 + num2;
+// console.log(funk3(10, 20));
+
+/**
+ * 分割代入
+ */
+// const myProfile = {
+//   name: "MYNAME",
+//   age: 50
+// };
+
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}です`
+// console.log(message1)
+
+// const { name, age } = myProfile
+// const message2 = `名前は${name}です。年齢は${age}です`
+// console.log(message2)
+
+const myProfile = ["Name", 26];
+
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}です`;
+console.log(message3);
+
+const [name, age] = myProfile;
+const message4 = `名前は${name}です。年齢は${age}です`;
+console.log(message4);
